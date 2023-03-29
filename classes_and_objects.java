@@ -1,9 +1,7 @@
 class Chicken {
-    public int ingridients(Boolean water, String masala, int chicken, String sabzi) {
+    public void ingridients(Boolean water, String masala, int chicken, String sabzi) {
         System.out.println("Do we need water? " + water);
         System.out.println("We also need " + masala + ", " + chicken + "kg chicken, & " + sabzi + " sabziyaan");
-
-        return 10;
     }
 }
 
