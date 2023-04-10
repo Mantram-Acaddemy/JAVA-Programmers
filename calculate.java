@@ -8,7 +8,7 @@ class calculate
         int a= scr.nextInt();
         System.out.println("enter the second no.");
         int b=scr.nextInt();
-        int c = a+b;
+        int c = a*b;
         System.out.println("result = " +c);
         scr.close();
     }
