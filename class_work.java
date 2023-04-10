@@ -14,10 +14,9 @@ public class class_work {
         double decimal = test.nextDouble();
         System.out.println("double="+decimal);
 
-        test.nextLine();
-
         System.out.println("Enter the string=");
 
+        test.nextLine();
         String word = test.nextLine();
         System.out.println("string="+word);
 
