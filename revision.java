@@ -79,6 +79,10 @@ public class revision {
                 break;
 
             }
+                default{
+System.out.println("wrong input");
+                    break;
+                }
         }
     }
 
