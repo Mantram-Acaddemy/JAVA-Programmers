@@ -1,3 +1,4 @@
+import java.net.SocketTimeoutException;
 import java.util.Scanner;
 
 public class revision {
@@ -7,6 +8,9 @@ public class revision {
         System.out.println("press 2 for number pattern");
         System.out.println("press 3 for getting factorial of a number");
         System.out.println("press 4 for reversing the number");
+        System.out.println("press 5 for checking the palindrome number");
+        System.out.println();
+        System.out.println("enter your choice");
         int c;
         c = sc.nextInt();
         switch (c) {
@@ -28,8 +32,8 @@ public class revision {
                         System.out.print("* ");
                     }
                     System.out.println();
-                    break;
                 }
+                break;
             }
             case 2: {
                 int count = 0;
@@ -78,6 +82,31 @@ public class revision {
                 System.out.println("reverse number =" + temp);
                 break;
 
+            }
+            case 5: {
+                int num, r, u, tem;
+                System.out.println("enter the number");
+                num = sc.nextInt();
+                tem = 0;
+                u = num;
+                while (num > 0) {
+                    r = num % 10;
+                    tem = (tem * 10) + r;
+                    num = num / 10;
+                }
+                if (u == tem) {
+                    System.out.println("answer =" + tem);
+                    System.out.println("It is a palindrome number");
+                } else {
+                    System.out.println("answer=" + tem);
+                    System.out.println("It is not a palindrome number");
+                }
+
+                break;
+            }
+            default: {
+                System.out.println("wrong input");
+                break;
             }
         }
     }
