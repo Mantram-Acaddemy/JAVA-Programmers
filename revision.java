@@ -84,28 +84,26 @@ public class revision {
 
             }
             case 5: {
-                int num, r, u, tem;
+                int r, num, tem = 0;
                 System.out.println("enter the number");
                 num = sc.nextInt();
-                tem = 0;
-                u = num;
+                int u = num;
                 while (num > 0) {
                     r = num % 10;
                     tem = (tem * 10) + r;
                     num = num / 10;
                 }
-                if (u == tem) {
-                    System.out.println("answer =" + tem);
+                if (tem == u) {
+                    System.out.println("answer=" + tem);
                     System.out.println("It is a palindrome number");
                 } else {
                     System.out.println("answer=" + tem);
                     System.out.println("It is not a palindrome number");
                 }
-
                 break;
             }
             default: {
-                System.out.println("wrong input");
+                System.out.println("wrong Input");
                 break;
             }
         }
