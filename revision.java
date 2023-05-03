@@ -9,6 +9,7 @@ public class revision {
         System.out.println("press 3 for getting factorial of a number");
         System.out.println("press 4 for reversing the number");
         System.out.println("press 5 for checking the palindrome number");
+        System.out.println("press 6 for butterfly pattern");
         System.out.println();
         System.out.println("enter your choice");
         int c;
@@ -99,6 +100,33 @@ public class revision {
                 } else {
                     System.out.println("answer=" + tem);
                     System.out.println("It is not a palindrome number");
+                }
+                break;
+            }
+            case 6: {
+                for (int i = 1; i <= 4; i++) {
+                    for (int j = 1; j <= i; j++) {
+                        System.out.print("* ");
+                    }
+                    for (int k = 1; k <= (8 - 2 * i); k++) {
+                        System.out.print("  ");
+                    }
+                    for (int d = 1; d <= i; d++) {
+                        System.out.print("* ");
+                    }
+                    System.out.println();
+                }
+                for (int i = 4; i >= 1; i--) {
+                    for (int j = 1; j <= i; j++) {
+                        System.out.print("* ");
+                    }
+                    for (int j = 1; j <= (8 - 2 * i); j++) {
+                        System.out.print("  ");
+                    }
+                    for (int j = 1; j <= i; j++) {
+                        System.out.print("* ");
+                    }
+                    System.out.println();
                 }
                 break;
             }
